@@ -1,12 +1,20 @@
 # Privacy-Preserving Indoor Localization
 
-C++ Library implementing a Client-Server Privacy Preserving Indoor Localisation Protocol and a simple Android Application which uses it. 
+C++ Library implementing a Client-Server Privacy Preserving Indoor Localization Protocol and a simple Android Application which uses it.
+
+Details of the implementation can be found in the paper "[FAPRIL: Towards Faster Privacy-preserving Fingerprint-based Localization](https://encrypto.de/papers/BNS22.pdf)" published at the [19. International Conference on Security and Cryptography (SECRYPT'22)](https://secrypt.scitevents.org) by:
+
+* Christopher van der Beets, Darmstadt University of Applied Sciences
+* [Raine Nieminen](https://encrypto.de/nieminen), Technical University of Darmstadt, [ENCRYPTO](https://encrypto.de)
+* [Thomas Schneider](https://encrypto.de/schneider), Technical University of Darmstadt, [ENCRYPTO](https://encrypto.de)
+
+**Warning:** This code is **not** meant to be used for a productive environment and is intended for testing and demonstration purposes only.
 
 ## Folder Structure description
 
-* app: This folder contains the mobile application, which will trigger the evaluation part
+* app: This folder contains the mobile application, which will trigger the evaluation part.
 * PPILLib: Ths folder contains the Library which is used by the mobile application. This Library is base on the Mobile Private Contact Discovery Library. Essentially here are all the parts of the protocol implemented.
-* PPILLib/droidCrypto/Server: This folder contains the part of the Server, which will trigger the garbling part 
+* PPILLib/droidCrypto/Server: This folder contains the part of the Server, which will trigger the garbling part.
 * Database: This folder contains a few examples of how the Database-files should look like and can be used for testing.
 
 
@@ -34,8 +42,8 @@ JAVA_INCLUDE_PATH (path to your jni.h), JAVA_INCLUDE_PATH2 (path to your jni_md.
 * Mobile App: Open gradle project in Android Studio, build and deploy. (Debugging and Datatransfer must be enaled on connected device)
 ## Run Instructions
 
-* run the main function with the number of Accesspoints: e.g. '''PPILLib/droidCrypto/Server/main 20'''
-* Start the mobile application 
+* Run the main function with the number of Access points: e.g. '''PPILLib/droidCrypto/Server/main 20'''
+* Start the mobile application
 
 ## Test programs
 
